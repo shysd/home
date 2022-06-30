@@ -2,151 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Homepage</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0,minimum-scale=1.00, maximum-scale=1.00, user-scalable=no">
-    <meta name="description" content="Shreyas Dethe: Homepage">
-    <meta name="author" content="Shreyas Dethe">
-
-    <link rel="stylesheet" media="screen and (max-width:885px) and (min-width: 400px)" href="css/style-smol.css">
-    <link rel="stylesheet" media="screen and (min-width: 886px)" href="css/style-big.css">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" async></script>
+  <title>Shreyas Dethe</title>
 </head>
 
-<body>
-    <!-- Page 1 -->
-    <div class="container" id="first">
-        <div class="home-left">
-            <h1 id="name-large">Shreyas Dethe</h1>
-            <p id="description">Electrical Engineer</p>
-            <p id="interests">Interested in: Power Electronics, Power Converters, Electric Vehicles, Battery Technology,
-                Chargers</p>
-            <div id="social">
-                <a href="https://github.com/shreyasdethe" target="_blank">
-                    <img alt="Github" class="social-icon" src="assets/001-github.svg">
-                </a>
-                <a href="https://instagram.com/shys.d" target="_blank">
-                    <img alt="Instagram" class="social-icon" src="assets/002-instagram.svg">
-                </a>
-                <a href="https://linkedin.com/in/shreyasdethe" target="_blank">
-                    <img alt="Linkedin" class="social-icon" src="assets/003-linkedin.svg">
-                </a>
-                <a href="https://twitter.com/shys_d" target="_blank">
-                    <img alt="Twitter" class="social-icon" src="assets/004-twitter.svg">
-                </a>
-            </div>
-            <div class="download-cv"><a href="assets/Shreyas-CV-06-2021.pdf" target="_blank">Download CV (.pdf)</a>
-            </div>
-        </div>
-        <div class="home-right">
-            <div class="line">
-                <div class="circle" id="main-circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-            <div class="acads">
-                <div id="main-acad">Master of Science<br>Power Engineering<br>Nanyang Technological University</div>
+<body class="dark-mode" onload="BodyLoaded()">
+  <div class="container">
+    <!-- Header -->
+    <div class="sticky-header">
+      <div class="heading-flex">
+        <h1 id="heading">Shreyas Dethe</h1>
+        <span id="dark-bright-mode-span" style="font-size: 48px;" onclick="DarkBrightModeToggle()">
+        </span>
+      </div>
 
-                <div>Project Associate<br>echem@iitb<br>Indian Institute of Technology,
-                    Bombay</div>
+      <div class="heading-flex">
+        <h2 id="description-personal">Electrical and Electronics Engineer</h2>
+        <span><a href="mailto:shreyasdethe9@gmail.com">shreyasdethe9@gmail.com</a></span>
+      </div>
 
-                <div>Bachelor of Technology<br>Electrical Engineering<br>Indian Institute of Technology,
-                    Bombay</div>
-
-                <div>Hardware Design Intern<br>Boson Motors, Pune</div>
-
-                <div>Project Intern<br>Drona Aviation<br>Mumbai</div>
-            </div>
-            <div class="years">
-                <div id="main-year">2022-23</div>
-                <div>2021</div>
-                <div>2016-20</div>
-                <div>2019</div>
-                <div>2017</div>
-            </div>
-        </div>
+      <div class="heading-flex" id="heading-links-div">
+        <a href="#" class="heading-links">Home</a>
+        -----
+        <a href="#" class="heading-links">Projects</a>
+        -----
+        <a href="#" class="heading-links">Blog</a>
+        -----
+        <a href="#" class="heading-links">Connect</a>
+        -----
+        <a href="#" class="heading-links">Download CV</a>
+      </div>
     </div>
-    <!-- Page 1 end -->
 
-    <!-- Page 2 -->
-    <div class="container" id="second">
-        <h2 class="second-heading">Projects</h2>
-        <div class="projects-grid">
-            <div class="projects-item">
-                <p class="item-title">Potentiostat-Galvanostat circuit design</p>
-                <p class="item-desc">for battery catalysis research, cyclic voltammetry and ammetry, and electrochemical
-                    impedance spectroscopy</p>
-            </div>
-            <div class="projects-item">
-                <p class="item-title">High power density DC-DC converter design</p>
-                <p class="item-desc">using Dual-Active Bridge (DAB) topology, for use in electric vehicles (EV) battery
-                    chargers</p>
-            </div>
-            <div class="projects-item">
-                <p class="item-title">High-frequency driver circuits for SiC MOSFETs</p>
-                <p class="item-desc">for driving SiC MOSFETs at 100kHz, in a DC-DC power converter @600 Watts, for use
-                    in electric vehicles battery chargers</p>
-            </div>
-            <div class="projects-item">
-                <p class="item-title">Analog front-end receiver design for NavIC</p>
-                <p class="item-desc">antenna, analog front-end receiver and signal processing system design for the
-                    NavIC satellite system</p>
-            </div>
-            <div class="projects-item">
-                <p class="item-title">Automated Strawberry Plucker</p>
-                <p class="item-desc">bot with a rotating arm that detects fresh strawberries from its bush and plucks
-                    it, used Yolo V3 object detection</p>
-            </div>
-            <div class="projects-item">
-                <p class="item-title">Swarm drone tracking and Localization</p>
-                <p class="item-desc">localizing multiple drones' position using an overhead camera, WhyCon ROS and WiFi
-                    with master-slave topology</p>
-            </div>
-        </div>
+    <div style="margin: 80px 0"></div>
 
+    <!-- start content: home -->
+    <div class="hero-content">
+      <img id="self-image" src="media/profile.JPG" width=300" height="375" loading="lazy"></img>
+      <p class="hero-content-text">
+        Hello! I'm Shreyas.
+        <br>
+        <br>
+        I'm an electrical and electronics engineer currently doing my Master of Science at
+        Nanyang Technological University, Singapore.
+        <br>
+        <br>
+        My interests lie in the domain of power engineering, power converters, batteries and storage solutions.
+        <br>
+        <br>
+        My other interests are electronics hardware design and development, software development and a whole lot of
+        other stuff you can find in my blog.<span id="blinking-character"></span>
+      </p>
     </div>
-    <!-- Page 2 end -->
 
-    <!-- Page 3 -->
-    <div class="container" id="third">
-        <h2 class="second-heading">Software <span><a href="https://github.com/shreyasdethe"
-                    target="_blank">github.com/shreyasdethe↗</a></span></h2>
-        <div class="projects-grid">
-            <a class="projects-item" href="https://shreyasdethe.github.io/boids" target="_blank">
-                <p class="item-title">Boids</p>
-                <p class="item-desc">the boids algorithm to simulate flocking behaviour, using p5js</p>
-            </a>
-            <a class="projects-item" href="https://shreyasdethe.github.io/doom-fire" target="_blank">
-                <p class="item-title">Doom Fire</p>
-                <p class="item-desc">a simulation of fire originally created for the intro screen of the DOOM PSX
-                    game,
-                    using p5js</p>
-            </a>
-            <a class="projects-item" href="https://shreyasdethe.github.io/smart-rockets" target="_blank">
-                <p class="item-title">Smart Rockets</p>
-                <p class="item-desc">implementation of the genetic algorithm on some flying rockets trying to find
-                    their
-                    base, using p5js</p>
-            </a>
-            <a class="projects-item" href="https://realise-build.herokuapp.com" target="_blank">
-                <p class="item-title">Realise!</p>
-                <p class="item-desc">a progressive web app (PWA) chat app, using React, XMPP and StropheJS</p>
-            </a>
-            <a class="projects-item" href="https://shreyasdethe.github.io/gameoflife" target="_blank">
-                <p class="item-title">Conway's Game of Life</p>
-                <p class="item-desc">implementation of Conway's game of life, using p5js</p>
-            </a>
-            <a class="projects-item" href="https://shreyasdethe.github.io/raycasting" target="_blank">
-                <p class="item-title">Raycasting</p>
-                <p class="item-desc">implementation of how raycasting works, using p5js</p>
-            </a>
-        </div>
-        <!-- Page 3 end -->
+    <!-- end container -->
+  </div>
 </body>
-
-<!-- <script src="js/script.js"></script> -->
 
 </html>
